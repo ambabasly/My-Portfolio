@@ -25,7 +25,7 @@ h1 {
 }
 
 a {
-  color: var( --primary-bottonbackground-color);
+  color: var(--primary-bottonbackground-color);
 
   &:hover, &:focus {
     /* No underlining when hovering over a link */
@@ -60,15 +60,6 @@ button {
     /* reduces the opacity of the button to 80% */
     opacity: 0.8;
   }
-}
-
-.button__secondary {
-  background-color: (--button-background-secondary-color);
-  color: var(--dark-gray-color);
-}
-
-a {/* element selector */
-  color: blue;
 }
 
 .profile {
@@ -187,10 +178,10 @@ a {/* element selector */
     fill: #edc655;
   }
   50% {
-    fill: #fcffad
+    fill: #fcffad;
   }
   100% {
-    fill: #f76414
+    fill: #f76414;
   }
 }
 
