@@ -17,24 +17,27 @@ body {
   line-height: 1.6;
 }
 
-h1  {
+h1 {
   font-size: 30px;
   font-weight: 700;
 }
 
 a {
   color: #357b70;
+
   &:hover {
     /* No underlining when hovering over a link */
     text-decoration: none;
   }
+
   &:focus {
     /* No underlining when hovering over a link */
     text-decoration: none;
   }
   &:visited {
-    color: #489c79;
-  }
+    /* selected link */
+      color: #489c79;
+  } 
 }
 
 button {
@@ -44,8 +47,8 @@ button {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  color: white;
   background-color: #357b70;
+  color: #fff;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
@@ -64,7 +67,6 @@ button {
     /* reduces the opacity of the button to 80% */
     opacity: 0.8;
   }
-
 }
 
 .profile {
@@ -80,6 +82,7 @@ button {
 }
 
 .page-footer {
+  clear: both;
   clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,18 +106,28 @@ button {
   display: flex;
   width: 100%;
   padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navigation-list {
   list-style-type: none;
+
   li {
     display: inline-block;
     margin-left: 15px;
-    .navigation-list__items {
-      text-decoration: none;
-    }
   }
 }
+
+.navigation-list__item{
+  .navigation-list__items--active {
+    text-decoration: none;
+  }
+  margin-left: 5px;
+  margin-right: 5px;
+  }
+
 
 .page-header_item  {
   display: block;
@@ -148,7 +161,8 @@ button {
 
 @media all and (max-width: 500px) {
   .grid {
-    grid-templaate-columns: 1fr;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 10px;
   }
   .grid_item:last-child {
@@ -166,11 +180,10 @@ button {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
-.grid_item:last-child {
+  .grid_item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
-
   h1 {
     font-size: 22px;
   }
@@ -189,9 +202,6 @@ button {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
-  ul {
-    list-style-type: none;
-  }
 }
 
 @-webkit-keyframes color-change {
@@ -219,8 +229,16 @@ button {
 }
 
 .sun {
-  -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: color-change;
+          animation-name: color-change;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 @-webkit-keyframes cloud-move {
