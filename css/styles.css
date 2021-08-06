@@ -1,3 +1,17 @@
+:root {
+  --primary-bottonbackground-color: #357b70;
+  --button-secondary-background-color: #e0b354;
+  --dark-gray-color-button__secondary : #2b2b2b;
+  --no-text-decoration: none;
+  --a-visited: #489c79;
+  --display-inline-block: inline-block;
+  --color-inside-button: #ffffff;
+  --element-selector: #0000FF;
+  --keyframes-color-change0: #edc655;
+  --keyframes-color-change50: #fcffad;
+  --keyframes-color-change100: #f76414;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -15,33 +29,36 @@ h1  {
 }
 
 a {
-  color: #357b70;
+  color: var(--primary-bottonbackground-color);
 }
 
 a:hover, a:focus {
   /* No underlining when hovering over a link */
-  text-decoration: none;
+  text-decoration: var(--no-text-decoration);
 }
 
 a.visited {
   /* selected link */
-  color: #489c79;
+  color: var(--a-visited);
 }
 
-button {
+.button, button {
   /* overwrites browser defaults and resets the border */
   border: none;
+  display: var(--display-inline-block);
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #357b70;
-  color: white;
-  text-decoration: none;
+  background-color: var(--primary-bottonbackground-color);
+  color: var(--color-inside-button);
+  text-decoration: var(--no-text-decoration);
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 button:hover, button:focus {
@@ -52,28 +69,22 @@ button:hover, button:focus {
 }
 
 .button__secondary {
-  background-color: #e0b354;
-  color: #2b2b2b;
+  background-color: var(--button-secondary-background-color);
+  color: var(--dark-gray-color-button__secondary);
 }
 
 .navigation-list__item--active {
-  text-decoration: none;
+  text-decoration: var(--no-text-decoration);
 }
 
 a {/* element selector */
-  color: blue;
-}
-
-.page-footer {
-  clear: both;
+  color: var(--element-selector);
 }
 
 .profile {
   max-width: 700px;
   margin: 0 auto;
 }
-
-
 
 .profile_portrait {
   float: left;
@@ -104,7 +115,7 @@ a {/* element selector */
 }
 
 .navigation-list li {
-  display: inline-block;
+  display: var(--display-inline-block);
   margin-left: 15px;
 }
 
@@ -161,34 +172,6 @@ a {/* element selector */
   }
 }
 
-.button, button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  display: inline-block;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* styles the button */
-  background-color: #357b70;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  /* width of the border, type, color */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition-duration: 0.2s;
-  transition-property: opacity;
-}
-
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-}
-
 .about {
   max-width: 700px;
   margin: 0 auto;
@@ -215,13 +198,13 @@ button:focus,
 
 @keyframes color-change {
   0% {
-    fill: #edc655;
+    fill: var(--keyframes-color-change0);
   }
   50% {
-    fill: #fcffad
+    fill: var(--keyframes-color-change50);
   }
   100% {
-    fill: #f76414
+    fill: var(--keyframes-color-change100);
   }
 }
 

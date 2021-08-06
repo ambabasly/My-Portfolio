@@ -17,30 +17,31 @@ body {
   line-height: 1.6;
 }
 
-h1 {
+h1  {
   font-size: 30px;
   font-weight: 700;
 }
 
 a {
   color: #357b70;
-
-  &:hover {
-    /* No underlining when hovering over a link */
-    text-decoration: none;
-  }
-
-  &:focus {
-    /* No underlining when hovering over a link */
-    text-decoration: none;
-  }
-  &:visited {
-    /* selected link */
-      color: #489c79;
-  } 
 }
 
-button {
+a:hover {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+}
+
+a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+}
+
+a.visited {
+  /* selected link */
+  color: #489c79;
+}
+
+.button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
@@ -48,7 +49,7 @@ button {
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #357b70;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
@@ -61,12 +62,49 @@ button {
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
-  &:hover, &:focus {
-    /* lets the mouse appear as a hand when hovering over the button */
-    cursor: pointer;
-    /* reduces the opacity of the button to 80% */
-    opacity: 0.8;
-  }
+}
+
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #357b70;
+  color: #ffffff;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+
+button:hover, button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+.button__secondary {
+  background-color: #e0b354;
+  color: #2b2b2b;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+a {/* element selector */
+  color: #0000FF;
 }
 
 .profile {
@@ -82,7 +120,6 @@ button {
 }
 
 .page-footer {
-  clear: both;
   clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,28 +143,16 @@ button {
   display: flex;
   width: 100%;
   padding: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .navigation-list {
   list-style-type: none;
-
-  li {
-    display: inline-block;
-    margin-left: 15px;
-  }
 }
 
-.navigation-list__item{
-  .navigation-list__items--active {
-    text-decoration: none;
-  }
-  margin-left: 5px;
-  margin-right: 5px;
-  }
-
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
 
 .page-header_item  {
   display: block;
@@ -136,12 +161,13 @@ button {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 200px;
           flex: 0 1 200px;
-  &:last-child {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    text-align: right;
-  }
+}
+
+.page-header_item:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
 }
 
 .grid {
@@ -193,15 +219,29 @@ button {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
-  ul {
-    list-style-type: none;
-  }
+}
+
+.about ul {
+  list-style-type: none;
 }
 
 .contact {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
+}
+
+.sun {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: color-change;
+          animation-name: color-change;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 @-webkit-keyframes color-change {
@@ -226,19 +266,6 @@ button {
   100% {
     fill: #f76414;
   }
-}
-
-.sun {
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-name: color-change;
-          animation-name: color-change;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
 }
 
 @-webkit-keyframes cloud-move {
