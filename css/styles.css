@@ -10,6 +10,7 @@
   --keyframes-color-change0: #edc655;
   --keyframes-color-change50: #fcffad;
   --keyframes-color-change100: #f76414;
+  --grid_item-background-color: #D3D3D3;
 }
 
 * {
@@ -138,7 +139,7 @@ a {/* element selector */
 }
 
 .grid_item {
-  background-color: lightgray;
+  background-color: var(--grid_item-background-color);
   padding: 20px;
   margin: 20px;
   border: 10px;

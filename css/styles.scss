@@ -1,11 +1,16 @@
 :root {
   --primary-bottonbackground-color: #357b70;
-  --button-background-secondary-color: #e0b354;
-  --dark-gray-color: #2b2b2b;
+  --button-secondary-background-color: #e0b354;
+  --dark-gray-color-button__secondary : #2b2b2b;
   --no-text-decoration: none;
-  --button-color: #fff;
   --a-visited: #489c79;
   --display-inline-block: inline-block;
+  --color-inside-button: #ffffff;
+  --element-selector: #0000FF;
+  --keyframes-color-change0: #edc655;
+  --keyframes-color-change50: #fcffad;
+  --keyframes-color-change100: #f76414;
+  --grid_item-background-color: #D3D3D3;
 }
 
 * {
@@ -17,29 +22,28 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  padding: 2%;
 }
 
-h1 {
+h1  {
   font-size: 30px;
   font-weight: 700;
-  text-align: center;
 }
 
 a {
   color: var(--primary-bottonbackground-color);
-
-  &:hover, &:focus {
-    /* No underlining when hovering over a link */
-    text-decoration: var(--no-text-decoration);
-  }
-  &:visited {
-    /* selected link */
-      color: var(--a-visited);
-  } 
 }
 
-button {
+a:hover, a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: var(--no-text-decoration);
+}
+
+a.visited {
+  /* selected link */
+  color: var(--a-visited);
+}
+
+.button, button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: var(--display-inline-block);
@@ -47,7 +51,7 @@ button {
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: var(--primary-bottonbackground-color);
-  color: var(--button-color);
+  color: var(--color-inside-button);
   text-decoration: var(--no-text-decoration);
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
@@ -56,12 +60,26 @@ button {
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition-duration: 0.2s;
   transition-property: opacity;
-  &:hover, &:focus {
-    /* lets the mouse appear as a hand when hovering over the button */
-    cursor: pointer;
-    /* reduces the opacity of the button to 80% */
-    opacity: 0.8;
-  }
+}
+
+button:hover, button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+.button__secondary {
+  background-color: var(--button-secondary-background-color);
+  color: var(--dark-gray-color-button__secondary);
+}
+
+.navigation-list__item--active {
+  text-decoration: var(--no-text-decoration);
+}
+
+a {/* element selector */
+  color: var(--element-selector);
 }
 
 .profile {
@@ -78,7 +96,6 @@ button {
 
 .page-footer {
   clear: both;
-  clear: both;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -92,35 +109,28 @@ button {
   display: flex;
   width: 100%;
   padding: 20px;
-  justify-content: space-between;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: var(--display-inline-block);
+  margin-left: 15px;
 }
 
 .page-header_item  {
-  display: inline-block;
+  display: block;
   height: auto;
   max-width: 100%;
   flex: 0 1 200px;
-  &:last-child {
-    flex-grow: 1;
-    text-align: right;
-  }
-}
-.navigation-list {
-  list-style-type: none;
-
-  li {
-    display: inline-block;
-    margin-left: 15px;
-  }
 }
 
-.navigation-list__item{
-  .navigation-list__item--active {
-    text-decoration: none;
-  }
-  margin-left: 5px;
-  margin-right: 5px;
-  }
+.page-header_item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
 
 .grid {
   display: grid;
@@ -129,7 +139,7 @@ button {
 }
 
 .grid_item {
-  background-color: lightgray;
+  background-color: var(--grid_item-background-color);
   padding: 20px;
   margin: 20px;
   border: 10px;
@@ -167,9 +177,10 @@ button {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
-  ul {
-    list-style-type: none;
-  }
+}
+
+.about ul {
+  list-style-type: none;
 }
 
 .contact {
@@ -178,24 +189,24 @@ button {
   text-align: center;
 }
 
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-  50% {
-    fill: #fcffad;
-  }
-  100% {
-    fill: #f76414;
-  }
-}
-
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+}
+
+@keyframes color-change {
+  0% {
+    fill: var(--keyframes-color-change0);
+  }
+  50% {
+    fill: var(--keyframes-color-change50);
+  }
+  100% {
+    fill: var(--keyframes-color-change100);
+  }
 }
 
 @keyframes cloud-move {
