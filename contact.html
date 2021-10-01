@@ -2,79 +2,80 @@
 
 <html lang="en">
 
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>Sylvester Arikhan - Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles-production.css">
-  </head>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <title>Sylvester Arikhan - Portfolio</title>
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <link rel="stylesheet" type="text/css" href="css/styles-production.css">
+    </head>
 
-  <body>
-    <header class="page-header">
-     <!-- Add Logo here -->
-      <img src="img/sylvester.arikhan_logo.png"  width="200" height="70"  alt="logo" class="page-header_item">
-      <nav class="main navigation page-header_item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <body>
+      <header class="page-header">
+      <!-- Add Logo here -->
+        <img src="img/sylvester.arikhan_logo.png"  width="200" height="70"  alt="logo" class="page-header_item">
+        <nav class="main navigation page-header_item">
+          <ul role="menubar" class="navigation-list">
+            <li role="presentation">
+              <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+            </li>
+            <li role="presentation">
+              <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+            </li>
+            <li role="presentation">
+              <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+            </li>
+            <li role="presentation">
+              <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <main>
+      <main>
+        <div class="contact">
+          <h1>Contact</h1>
+          CareerFoundry GmbH<br>
+          Banhof Str. 126 <br>
+          09599 Freiberg<br>
+          Deutschland<br>
+          <br>
+            <p>Tel <a href="tel:4915216760139">(+49) 15216760139</a>
+            <br></p>
+            <p>Skype <a href="Hello">live:.cid.2adab12e2748716b</a><br></p>
+            <a href="mailto:arikhansylvester@outlook.com">arikhansylvester@outlook.com</a><br>
+            <a href="mailto:arikhansylvester@outlook.com"></a>
+        </div>
+      </main>
+
       <div class="contact">
-        <h1>Contact</h1>
-        CareerFoundry GmbH<br>
-        Banhof Str. 126 <br>
-        09599 Freiberg<br>
-        Deutschland<br>
-        <br>
-           <p>Telephone <a href="tel:+4915216760139">+49 15216760139</a>
-           <br></p>
-           <p>Skype <a href="Hello">Arikhan</a><br></p>
-           <a href="mailto:arikhansylvester@outlook.com">arikhansylvester@outlook.com</a><br>
-           <a href="mailto:arikhansylvester@outlook.com">Contact me</a>
-       </div>
-    </main>
+        <h3>Contact Me</h3>
+        <form action="Submit" method="post" id="contact-form">
+          <!-- <label class="standard-label" for="name">Full Name: </label> -->
+          <input type="text" id="name" placeholder="Name" required><br />
+          <!-- <label class="standard-label" for="email">E-mail: </label> -->
+          <input type="email" id="email" placeholder="example@example.com" required><br />
+          <!-- <label class="standard-label" for="phone">Telephone: </label> -->
+          <input type="tel" id="phone" placeholder="Phone"><br />
+          <!-- <label class="standard-label" for="message">Message: </label> -->
+          <textarea maxlength="240" id="message" placeholder="Message" required></textarea><br />
+          <button type="submit" form="contact-form" value="Submit">Submit</button>
+        </form>
+        </div>
 
-    <div class="contact">
-      <form>
-       <label class="standard-label" for="contact-email">Email: </label>
-       <input type="email" id="contact-email" required>
+        <footer class="page-footer">
+              <p>Find me on</p>
+              <div class="social-media">
+              <a href="https://github.com/ambabasly"><img src="img/github_icon.svg" alt="Github" height="30" width="30"></a>
+              <a href="https://twitter.com/ambabasly"><img src="img/twitter_icon.svg" alt="Twitter" height="30" width="30"></a>
+              <a href="https://www.linkedin.com/in/sylvester-arikhan-367381157/"><img src="img/linkedin_icon.svg" alt="LinkedIn" height="30" width="30"></a>
+          </div>
+        </footer>
 
-       <label class="standard-label"></label>
+      <script src="js/tota11y.min.js"></script>
 
-       <label class="standard-label">Message: </label>
-       <textarea maxlength="240" required=""></textarea>
-
-       <input type="submit" value="Send message">
-      </form>
-      </div>
-
-    <footer class="page-footer">
-          <p>Find me on</p>
-          <div class="social-media">
-          <a href="https://github.com/ambabasly"><img src="img/github_icon.svg" alt="Github" height="30" width="30"></a>
-          <a href="https://twitter.com/ambabasly"><img src="img/twitter_icon.svg" alt="Twitter" height="30" width="30"></a>
-          <a href="https://www.linkedin.com/in/sylvester-arikhan-367381157/"><img src="img/linkedin_icon.svg" alt="LinkedIn" height="30" width="30"></a>
-      </div>
-    </footer>
-
- <script src="js/tota11y.min.js"></script>
-
-</body>
+  </body>
 
 </html>

@@ -234,3 +234,13 @@ a {/* element selector */
 .cloud-back {
   animation: 39s cloud-move-reverse infinite alternate linear;
 }
+
+html {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/background-dark.png') no-repeat center center fixed; 
+  /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/backgroundimage.jpg') no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+

@@ -321,3 +321,11 @@ a {/* element selector */
   -webkit-animation: 39s cloud-move-reverse infinite alternate linear;
           animation: 39s cloud-move-reverse infinite alternate linear;
 }
+
+html {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)) ), url('../img/background-dark.png') no-repeat center center fixed;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/background-dark.png') no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/background-dark.png') no-repeat center center fixed; 
+  /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/backgroundimage.jpg') no-repeat center center fixed; */
+  background-size: cover;
+}
