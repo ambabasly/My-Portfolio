@@ -15,6 +15,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
+  color: black
 }
 
 h1  {
@@ -105,7 +106,7 @@ button:hover, button:focus {
 }
 
 a {/* element selector navbar */
-  color: #0000FF;
+  color: darkred
 }
 
 .profile {
@@ -130,7 +131,7 @@ a {/* element selector navbar */
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  color: red
+  color: darkred
 }
 
 .profile_text {
@@ -328,8 +329,6 @@ body {
   background-image: url("../css/background2.jpg");  
 }
 
-
-
 .flip-card {
   background-color: transparent;
   width: 100%;
@@ -370,7 +369,7 @@ body {
   justify-content: space-between;
 }
 
-.button-Skills {
+.container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
