@@ -10,62 +10,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles-production.css">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+   
   </head>
   <body>
-    <!--<div class="row page-footer">-->
+    <div class="container-fluid">
       <!-- Header including the logo and the main navigation -->
-    <header class="page-header">
+    <header class="row page-header">
       <!-- Add Logo here -->
-       <img src="img/sylvester.arikhan_logo.png"  width="200" height="70"  alt="logo" class="page-header_item">
-       <nav class="main navigation page-header_item">
-         <ul role="menubar" class="navigation-list">
-           <li role="presentation">
-             <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-           </li>
-           <li role="presentation">
-             <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-           </li>
-           <li role="presentation">
-             <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-           </li>
-           <li role="presentation">
-             <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-           </li>
-         </ul>
-       </nav>
+      <img src="img/sylvester.arikhan_logo.png"  width="200" height="70"  alt="logo" class="col-md-4 page-header_item">
+      <nav class="col-md-8 main navigation page-header_item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
  
      <main>
        <div class="profile">
-         <img src="https://avatars.githubusercontent.com/u/88083504?v=4" class="col-md-4 profile_portrait" alt="Sylvester Arikhan Portrait">
+         <img src="https://avatars.githubusercontent.com/u/88083504?v=4" class="profile_portrait" alt="Sylvester Arikhan Portrait">
          <h1>Sylvester Arikhan!</h1>
-         <!-- personal statement -->
          <p><strong>I am a <strong>Chemist, and a Full-Stack Web Developer</strong>  from Germany.</strong></p>
          <p><strong> I am looking forward to working in a field where I can use my chemistry, management, and coding skills, and hope to work for an employer that cares about the physical health of its
-           employees and provides an environment where I can nurture and grow my skills to become the best version of myself in my career.</strong>
-          </p>
+           employees and provides an environment where I can nurture and grow my skills to become the best version of myself in my career.</strong></p>
            <p><strong>As a budding web developer with a strong <strong>"chemistry background"</strong>, I bring a high level of thinking and problem-solving skills that are
              highly sought after in the technology field.</strong></p> 
              <p><strong>Therefore, I strongly believe that the aforementioned skills that can be found in any field have been an advantage in deciding to
                venture into the world of ICT, regardless of the small differences that may exist, but I am willing to put in the extra effort to make it
-               worthwhile and reach new frontiers of knowledge in real life as well.</strong>
-            </p>
-      </div>
-
-      <div class="row">
-        <!--<div class="col button-Skills">
-          <img class="img-fluid" src="img/HTML.png" width="100" height="100" alt="HTML"> 
-          <img class="img-fluid" src="img/JS.png" width="100" height="100" alt="JS"> 
-          <img class="img-fluid" src="img/Nodejs.png" width="100" height="100" alt="Nodejs">
-          <img class="img-fluid" src="img/React.png" width="100" height="100" alt="React">
-          <img class="img-fluid" src="img/Angular.png" width="100" height="100" alt="Angular">
-          <img class="img-fluid" src="img/Aws.png" width="100" height="100" alt="Aws">
-          <img class="img-fluid" src="img/Sql.png" width="100" height="100" alt="Sql">
-          <img class="img-fluid" src="img/TDD.png" width="100" height="100" alt="TDD">
-          <img class="img-fluid" src="img/mongodb-logo.png" width="100" height="100" alt="mongodb-logo">
-        </div>-->
-      </div>
+               worthwhile and reach new frontiers of knowledge in real life as well.</strong></p>
+             </div>
+         <div class="row button-Skills">
+           <div class="col-sm-12">
+            <img src="img/HTML.png" style="max-width:10%;" alt="...">
+            <img src="img/mongodb-logo.png" style="max-width:10%;" alt="...">
+            <img src="img/JS.png" style="max-width:10%;" alt="...">
+            <img src="img/Nodejs.png" style="max-width:10%;" alt="...">
+            <img src="img/React.png" style="max-width:10%;" alt="...">
+            <img src="img/Angular.png" style="max-width:10%;" alt="...">
+            <img src="img/Aws.png" style="max-width:10%;" alt="...">
+            <img src="img/Sql.png" style="max-width:10%;" alt="...">
+            <img src="img/TDD.png" style="max-width:10%;" alt="...">
+           </div>
+         </div>
      </main>
  
      <footer class="page-footer">
@@ -79,6 +75,7 @@
          </div>          
      </footer>
     </div>
+    
 
     <!--<script src="js/tota11y.min.js"></script>-->
 
@@ -87,6 +84,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   </body>
+
 </html>
 
 
