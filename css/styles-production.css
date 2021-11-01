@@ -105,6 +105,7 @@ button:hover, button:focus {
   text-decoration: none;
 }
 
+
 a {/* element selector navbar */
   color: darkred
 }
@@ -229,6 +230,10 @@ a {/* element selector navbar */
   list-style-type: none;
 }
 
+.end-buttons {
+  text-align: center;
+}
+
 .contact {
   max-width: 700px;
   margin: 0 auto;
@@ -327,7 +332,7 @@ a {/* element selector navbar */
 }
 
 body {
-  background-image: url("../css/background2.jpg");  
+  background-image: url("../css/background5.jpg");  
 }
 
 
@@ -381,8 +386,15 @@ body {
   text-align: center;
 }
 
-.col-md-12 img {width:100%}
+/*inner text heading*/
+.tech-widget-inner {
+  text-align: center;
+}
 
+/*project in work.html*/
+.Projects {
+  text-align: center;
+}
 
 
 

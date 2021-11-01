@@ -10,59 +10,67 @@
       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
       <link rel="stylesheet" type="text/css" href="css/styles-production.css">
+      <!-- css bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
 
     <body>
-      <header class="page-header">
-      <!-- Add Logo here -->
-        <img src="img/sylvester.arikhan_logo.png"  width="200" height="70"  alt="logo" class="page-header_item">
-        <nav class="main navigation page-header_item">
-          <ul role="menubar" class="navigation-list">
-            <li role="presentation">
-              <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-            </li>
-            <li role="presentation">
-              <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-            </li>
-            <li role="presentation">
-              <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-            </li>
-            <li role="presentation">
-              <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <main>
-        <div class="contact">
-          <h1>Contact</h1>
-          CareerFoundry GmbH<br>
-          Banhof Str. 126 <br>
-          09599 Freiberg<br>
-          Deutschland<br>
-          <br>
-            <p>Tel <a href="tel:4915216760139">(+49) 15216760139</a>
-            <br></p>
-            <p>Skype <a href="Hello">live:.cid.2adab12e2748716b</a><br></p>
-            <a href="mailto:arikhansylvester@outlook.com">arikhansylvester@outlook.com</a><br>
-            <a href="mailto:arikhansylvester@outlook.com"></a>
-        </div>
-      </main>
-
-      <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media">
-          <a href="https://github.com/ambabasly"><img src="img/github_icon.svg" alt="Github" height="30" width="30"/></a>
-          <a href="https://twitter.com/ambabasly"><img src="img/twitter_icon.svg" alt="Twitter" height="30" width="30"></a>
-          <a href="https://www.linkedin.com/in/sylvester-arikhan-367381157/"><img src="img/linkedin_icon.svg" alt="LinkedIn" height="30" width="30"></a>
-          <h4 class="footer-title">All Rights Reserved - Sylvester Arikhan </h4>
-        <p class="footer-text">Copyright &copy; 2021 </p>
-        </div>          
-    </footer>
-
-      <!--<<script src="js/tota11y.min.js"></script>-->
+      <!-- css bootstrap -->
+      <div class="container-fluid">
+        <header class="row page-header">
+          <!-- Add Logo here -->
+          <img src="img/sylvester.arikhan_logo.png"  width="200" height="70"  alt="logo" class="col-md-4 page-header_item">
+            <nav class="col-md-8 main navigation page-header_item">
+              <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                  <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+                </li>
+                <li role="presentation">
+                  <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+                </li>
+                <li role="presentation">
+                  <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                </li>
+                <li role="presentation">
+                  <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+              </ul>
+            </nav>
+        </header>
+    
+          <main>
+            <div class="contact">
+              <h1>Contact</h1>
+              Banhof Str. 126 <br>
+              09599 Freiberg<br>
+              Deutschland<br>
+              <br>
+                <p>Tel <a href="tel:4915216760139">(+49) 15216760139</a>
+                <br></p>
+                <p>Skype <a href="Hello">live:.cid.2adab12e2748716b</a><br></p>
+                <a href="mailto:arikhansylvester@outlook.com">arikhansylvester@outlook.com</a><br>
+                <a href="mailto:arikhansylvester@outlook.com"></a>
+            </div>
+          </main>
+    
+          <footer class="page-footer">
+            <p>Find me on</p>
+            <div class="social-media">
+              <a href="https://github.com/ambabasly"><img src="img/github_icon.svg" alt="Github" height="30" width="30"/></a>
+              <a href="https://twitter.com/ambabasly"><img src="img/twitter_icon.svg" alt="Twitter" height="30" width="30"></a>
+              <a href="https://www.linkedin.com/in/sylvester-arikhan-367381157/"><img src="img/linkedin_icon.svg" alt="LinkedIn" height="30" width="30"></a>
+              <h4 class="footer-title">All Rights Reserved - Sylvester Arikhan </h4>
+            <p class="footer-text">Copyright &copy; 2021 </p>
+            </div> 
+          </footer>
+      </div>
   
-  </body>
+        <!--<<script src="js/tota11y.min.js"></script>-->
+
+        <!-- css bootstrap -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
 
 </html>

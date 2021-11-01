@@ -1,193 +1,214 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <title>Sylvester Arikhan - Portfolio</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/styles-production.css">
-</head>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <title>Sylvester Arikhan - Portfolio</title>
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <link rel="stylesheet" type="text/css" href="css/styles-production.css">
+      <!-- css bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
 
-<body>
-  <header class="page-header">
-    <!-- Add Logo here -->
-    <img src="img/sylvester.arikhan_logo.png" width="200" height="70" alt="logo" class="page-header_item">
-    <nav class="main navigation page-header_item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="Projects">
-    <h1>Projects</h1>
-    <div class="grid">
-      <div class="grid_item">
-        <div class="flip-card">
-          <div class="flip-card-inner">  
-            <div class="flip-card-back">
-              <img src="img/pokemon.png" alt="Avatar" style="width:100%;height:300px;">
-            </div>
-            <div class="flip-card-front">   
-              <h2>JavaScript App "Pokédex"</h2>
-              <p>The purpose of this project is to create a simple application that lists a variety of Pokemon along with their individual attributes, 
-                pulling information directly from an external API. Creating a small web application using <strong>HTML, CSS and JavaScript</strong> 
-                that loads data from an external API and allows you to view data points in detail.</p>
-            </div>
-          </div>
-        </div>
-        <div class="tech-widget">
-          <h4>Tech Stack</h4>
-          <h5> HTML | CSS | JavaScript | Boootstrap | jQuery </h5><br>
-      </div>
-          <div class="button-widget">
-          <a href="https://ambabasly.github.io/Pokemon-app/" target="_blank" class="button">See live Project</a>
-          <a href="https://github.com/ambabasly/Pokemon-app.git" target="_blank" class="button">See Github</a>
-        </div>
-      </div>
-
-        <div class="grid_item">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-back">
-                <img src="img/DB.jpg" alt="Avatar" style="width:100%;height:300px;">
-              </div>
-              <div class="flip-card-front">
-                  <h2>Database App "myFlix"</h2>
-                  <p> The purpose of this project is to create the server-side component of a "movies" web application, using
-                    <strong>JavaScript, Node.js and Express</strong>. The web application will provide users with access to
-                    information about various movies, directors, and genres. Users will be able to sign up, update their personal
-                    information, and create a list of their favorite movies.</p>
+    <body>
+      <!-- css bootstrap -->
+      <div class="container-fluid">
+        <header class="row page-header">
+          <!-- Add Logo here -->
+          <img src="img/sylvester.arikhan_logo.png"  width="200" height="70"  alt="logo" class="col-md-4 page-header_item">
+          <nav class="col-md-8 main navigation page-header_item">
+            <ul role="menubar" class="navigation-list">
+              <li role="presentation">
+                <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+              </li>
+              <li role="presentation">
+                <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+              </li>
+              <li role="presentation">
+                <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+              </li>
+              <li role="presentation">
+                <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+  
+        <section class="Projects">
+          <h1>Projects</h1>
+          <div class="grid">
+            <div class="grid_item">
+              <div class="flip-card">
+                <div class="flip-card-inner">  
+                  <div class="flip-card-back">
+                    <img src="img/pokemon.png" alt="Avatar" style="width:100%;height:300px;">
                   </div>
-              </div>
-          </div>
-          <div class="tech-widget">
-            <h4>Tech Stack</h4>
-            <h5> Node.js | Express | MongoDB | JavaScript | Heroku | Postman </h5><br>
-          </div>
-            <div class="button-widget">
-            <a href="http://my-flixdbapp.herokuapp.com/documentation.html" target="_blank" class="button">See
-              documentation</a>
-            <a href="https://github.com/ambabasly/flix_App.git" target="_blank" class="button">See Github</a>
-          </div>
-        </div>
-
-        <div class="grid_item">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-back">
-              <img src="img/movie-app_react.png" alt="Avatar" style="width:100%;height:300px;">
-            </div>
-              <div class="flip-card-front">
-                <h2>React App (myFlix)</h2>
-                <p>Using React, the client-side is built for an application
-                  called myFlix based on its existing server-side code (REST API and database). A user can
-                  access information on movies, directors, and genres and create a profile to save data
-                  about his or her favorite movies.</p>
-                </div>
-            </div>
-        </div>
-        <div class="tech-widget">
-          <h4>Tech Stack</h4>
-            <h5> Redux | Boootstrap | Axios | netlify | Node.js and npm package </h5><br>
-          </div>
-            <div class="button-widget">
-            <a href="https://myflixmovieapp.netlify.app/" target="_blank" class="button">Click to Register</a>
-            <a href="https://github.com/ambabasly/myFlix-client.git" target="_blank" class="button">See Github</a>
-          </div>
-        </div>
-
-        <div class="grid_item">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-back">
-                <img src="img/meetapp.png" alt="Avatar" style="width:100%;height:300px;">
-              </div>
-                <div class="flip-card-front">
-                    <h2>Meet App</h2>
-                    <p>This application uses the Google Calendar API to fetch
-                      upcoming events and it is built with a serverless, progressive web application (PWA)
-                      with React using a test-driven development (TDD) technique.</p>
+                  <div class="flip-card-front">
+                    <div class="tech-widget-inner">
+                      <h2>JavaScript App "Pokédex"</h2>
+                    </div>   
+                      <p>The purpose of this project is to create a simple application that lists a variety of Pokemon along with their individual attributes, 
+                        pulling information directly from an external API. Creating a small web application using <strong>HTML, CSS and JavaScript</strong> 
+                        that loads data from an external API and allows you to view data points in detail.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="tech-widget">
-              <h4>Tech Stack</h4>
-              <h5> React | Google OAuth2 for login | Amazon Lambda functions for hosting | Enzyme for code testing | npm
-                packages </h5><br>
+              <div class="tech-widget">
+                <h4>Tech Stack</h4>
+                <h5> HTML | CSS | JavaScript | Boootstrap | jQuery </h5><br>
               </div>
                 <div class="button-widget">
-                <a href="https://ambabasly.github.io/meet2/" target="_blank" class="button">See live Project</a>
-                <a href="https://github.com/ambabasly/meet2.git" target="_blank" class="button">See Github</a>
-            </div>
-        </div>
-
-        <div class="grid_item">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-back">
-              <img src="img/react_native.png" alt="Avatar" style="width:100%;height:300px;">
-            </div>
-              <div class="flip-card-front">
-                <h2>React Native Mobile Chat App</h2>
-                <p>Building a chat app for mobile devices using React Native. The app provide users with a chat interface and options to share images and their 
-                  location.</p>
-            </div>
-          </div>
-        </div>
-        <div class="tech-widget">
-          <h4>Tech Stack</h4>
-            <h5> React Native | Gifted Chat | Expo | Firebase | Node.js and npm package </h5><br>
-          </div>
-            <div class="button-widget">
-              <a href="https://youtu.be/cI2rUnXU8R0" target="_blank" class="button">See live project on youtube</a>
-              <a href="https://github.com/ambabasly/Chat-App.git" target="_blank" class="button">See Github</a>
-          </div>
-        </div>
-
-        <div class="grid_item">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-back">
-                <img src="img/myflix.png" alt="Avatar" style="width:100%;height:300px;">
-              </div>
-                <div class="flip-card-front">
-                  
-              <h2>Angular App (myFlix)</h2>
-              <p>Using Angular, build the client-side for an application
-                called myFlix based on its existing server-side code (REST API and database), with
-                supporting documentation. Users will be able to use the app whenever they want to read
-                information about different movies or update their user information.</p>
+                <a href="https://ambabasly.github.io/Pokemon-app/" target="_blank" class="button">See live Project</a>
+                <a href="https://github.com/ambabasly/Pokemon-app.git" target="_blank" class="button">See Github</a>
               </div>
             </div>
-          </div>
-          <div class="tech-widget">
-            <h4>Tech Stack</h4>
-              <h5> Angular | Node.js | Node pakages | Angular Material | Github </h5><br>
-            </div>
-              <div class="button-widget">
-                <a href="https://ambabasly.github.io/myFlix-Angular-client/" target="_blank" class="button">Click toRegister</a>
-                <a href="https://github.com/ambabasly/myFlix-Angular-client.git" target="_blank" class="button">See Github</a>
+  
+              <div class="grid_item">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-back">
+                      <img src="img/DB.jpg" alt="Avatar" style="width:100%;height:300px;">
+                    </div>
+                    <div class="flip-card-front">
+                      <div class="tech-widget-inner">
+                        <h2>Database App "myFlix"</h2>
+                      </div>
+                      <p>The purpose of this project is to create the server-side component of a "movies" web application, using
+                        <strong>JavaScript, Node.js and Express</strong>. The web application will provide users with access to
+                        information about various movies, directors, and genres. Users will be able to sign up, update their personal
+                        information, and create a list of their favorite movies.
+                      </p>  
+                    </div>
+                  </div>
+                </div>
+                <div class="tech-widget">
+                  <h4>Tech Stack</h4>
+                  <h5> Node.js | Express | MongoDB | JavaScript | Heroku | Postman </h5><br>
+                </div>
+                  <div class="button-widget">
+                  <a href="http://my-flixdbapp.herokuapp.com/documentation.html" target="_blank" class="button">See
+                    documentation</a>
+                  <a href="https://github.com/ambabasly/flix_App.git" target="_blank" class="button">See Github</a>
+                </div>
+              </div>
+  
+              <div class="grid_item">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-back">
+                    <img src="img/movie-app_react.png" alt="Avatar" style="width:100%;height:300px;">
+                  </div>
+                    <div class="flip-card-front">
+                      <div class="tech-widget-inner">
+                        <h2>React App (myFlix)</h2>
+                      </div>
+                      <p>Using React, the client-side is built for an application
+                        called myFlix based on its existing server-side code (REST API and database). A user can
+                        access information on movies, directors, and genres and create a profile to save data
+                        about his or her favorite movies.
+                      </p>
+                    </div>
+                </div>
+              </div>
+              <div class="tech-widget">
+                <h4>Tech Stack</h4>
+                  <h5> Redux | Boootstrap | Axios | netlify | Node.js and npm package </h5><br>
+              </div>
+                  <div class="button-widget">
+                  <a href="https://myflixmovieapp.netlify.app/" target="_blank" class="button">Click to Register</a>
+                  <a href="https://github.com/ambabasly/myFlix-client.git" target="_blank" class="button">See Github</a>
+                  </div>
+              </div>
+  
+              <div class="grid_item">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-back">
+                      <img src="img/meetapp.png" alt="Avatar" style="width:100%;height:300px;">
+                    </div>
+                      <div class="flip-card-front">
+                        <div class="tech-widget-inner">
+                          <h2>Meet App</h2>
+                        </div>
+                          <p>This application uses the Google Calendar API to fetch
+                            upcoming events and it is built with a serverless, progressive web application (PWA)
+                            with React using a test-driven development (TDD) technique.
+                          </p>
+                      </div>
+                  </div>
+                </div>
+                  <div class="tech-widget">
+                    <h4>Tech Stack</h4>
+                    <h5> React | Google OAuth2 for login | Amazon Lambda functions for hosting | Enzyme for code testing | npm
+                      packages </h5><br>
+                  </div>
+                    <div class="button-widget">
+                    <a href="https://ambabasly.github.io/meet2/" target="_blank" class="button">See live Project</a>
+                    <a href="https://github.com/ambabasly/meet2.git" target="_blank" class="button">See Github</a>
+                    </div>
+              </div>
+  
+              <div class="grid_item">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-back">
+                      <img src="img/react_native.png" alt="Avatar" style="width:100%;height:300px;">
+                    </div>
+                      <div class="flip-card-front">
+                        <div class="tech-widget-inner">
+                          <h2>React Native Mobile Chat App</h2>
+                        </div>
+                        <p>Building a chat app for mobile devices using React Native. The app provide users with a chat interface and options to share images and their 
+                          location.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+              <div class="tech-widget">
+                <h4>Tech Stack</h4>
+                  <h5> React Native | Gifted Chat | Expo | Firebase | Node.js and npm package </h5><br>
+              </div>
+                  <div class="button-widget">
+                    <a href="https://youtu.be/cI2rUnXU8R0" target="_blank" class="button">See live project on youtube</a>
+                    <a href="https://github.com/ambabasly/Chat-App.git" target="_blank" class="button">See Github</a>
+                  </div>
+              </div>
+  
+              <div class="grid_item">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-back">
+                      <img src="img/myflix.png" alt="Avatar" style="width:100%;height:300px;">
+                    </div>
+                      <div class="flip-card-front">
+                        <div class="tech-widget-inner">
+                          <h2>Angular App (myFlix)</h2>
+                        </div>  
+                        <p>Using Angular, build the client-side for an application
+                          called myFlix based on its existing server-side code (REST API and database), with
+                          supporting documentation. Users will be able to use the app whenever they want to read
+                          information about different movies or update their user information.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tech-widget">
+                  <h4>Tech Stack</h4>
+                    <h5> Angular | Node.js | Node pakages | Angular Material | Github </h5><br>
+                </div>
+                  <div class="button-widget">
+                    <a href="https://ambabasly.github.io/myFlix-Angular-client/" target="_blank" class="button">Click toRegister</a>
+                    <a href="https://github.com/ambabasly/myFlix-Angular-client.git" target="_blank" class="button">See Github</a>
+                  </div>
               </div>
             </div>
-          </div>
         </section>
-
+  
         <footer class="page-footer">
           <p>Find me on</p>
           <div class="social-media">
@@ -197,7 +218,13 @@
             <h4 class="footer-title">All Rights Reserved - Sylvester Arikhan </h4>
           <p class="footer-text">Copyright &copy; 2021 </p>
           </div>          
-      </footer>
-</body>
+        </footer>
+      </div>
+
+      <!-- css bootstrap -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
 
 </html>
