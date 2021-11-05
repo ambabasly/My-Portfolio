@@ -1,177 +1,343 @@
 :root {
-  --primary-bottonbackground-color: #357b70;
-  --button-secondary-background-color: #e0b354;
-  --dark-gray-color-button__secondary : #2b2b2b;
-  --no-text-decoration: none;
-  --a-visited: #489c79;
-  --display-inline-block: inline-block;
-  --color-inside-button: #ffffff;
-  --element-selector: #0000FF;
-  --keyframes-color-change0: #edc655;
-  --keyframes-color-change50: #fcffad;
-  --keyframes-color-change100: #f76414;
-  --grid_item-background-color: #D3D3D3;
-}
-
-* {
-  box-sizing: border-box;
+  --background-color: #fbf7f5;
+  --primary-color: #ffffff;
+  --secondary-color: #743333;
+  --dark-grey: #7a7a7a;
+  --normal-weight: 700;
+  --grid-background: #ffffff;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-}
+    background-color: var(--background-color);
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 16px;
+    /* Sets the font size to 16px */
+    line-height: 1.6;
+    /* Sets the line-height to 1.6 */
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 100vh;
+    
+  }
 
-h1  {
-  font-size: 30px;
-  font-weight: 700;
-}
+  main {
+    padding-bottom: 2.5rem;
+    margin-top: 5rem;
+    padding: 30px; 
 
-a {
-  color: var(--primary-bottonbackground-color);
-}
+  }
+  
+  h1 {
+    font-size: 30px;
+    font-weight: var(--normal-weight);
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: var(--normal-weight);
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: var(--normal-weight);
+  }
 
-a:hover, a:focus {
-  /* No underlining when hovering over a link */
-  text-decoration: var(--no-text-decoration);
-}
+  a {
+    color: var(--dark-grey);
+  }
 
-a.visited {
-  /* selected link */
-  color: var(--a-visited);
-}
+  a:hover, a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:active {
+    /* selected link */
+    color: var(--dark-grey);
+  }
 
-.button, button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  display: var(--display-inline-block);
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: var(--primary-bottonbackground-color);
-  color: var(--color-inside-button);
-  text-decoration: var(--no-text-decoration);
-  /*adds spacing to the button (this will be discussed more in-depth later) */
-  padding: 10px;
-  border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition-duration: 0.2s;
-  transition-property: opacity;
-}
+  .page-header {
+    display: flex;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    justify-content: space-between;
+  }  
 
-button:hover, button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-}
+  .nav-link {
+      cursor: pointer;
+      position: relative;
+      color: blue;
+  }
 
-.button__secondary {
-  background-color: var(--button-secondary-background-color);
-  color: var(--dark-gray-color-button__secondary);
-}
+  .nav-link:hover {
+    color: blue;
+  }
 
-.navigation-list__item--active {
-  text-decoration: var(--no-text-decoration);
-}
+  a.navigation-list__item::before, a.navigation-list__item::after
+  {
+     position: absolute;
+      left: 0px;
+      width: 100%;
+      height: 1px;
+      background: white;
+      content: "";
+      opacity: 0;
+      transition: all 0.3s;
+  }
+  
+  a.navigation-list__item::before
+  {
+      top: 0px;
+      transform: translateY(15px);
+  }
+  
+  a.navigation-list__item::after
+  {
+      bottom: 0px;
+      transform: translateY(-15px);
+  }
+  
+  a.navigation-list__item:hover::before, a.navigation-list__item:hover::after
+  {
+      opacity: 1;
+      transform: translateY(0px);
+  }
 
-a {/* element selector */
-  color: var(--element-selector);
-}
 
-.profile {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.profile_portrait {
-  float: left;
-  width: 250px;
-  margin-right: 40px;
-  border-radius: 50%;
-}
-
-.page-footer {
-  clear: both;
+.button-group {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+  button:hover, button:focus,
+  .button:hover, .button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+  }
+  
+  button:hover,
+  button:focus,
+  .button:hover,
+  .button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+  }
+
+  .profile {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .profile_portrait {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+  }
+
+  .about{
+    max-width:1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5rem;
+  }
+
+  .contact {
+   padding-top: 5rem;
+    text-align: center;
+  }
+
+  .projects {
+    padding-top: 5rem;
+    text-align: center;
+  }
+
+  .about-list {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .projects-card {
+    padding-bottom: 20px;
+  }
+
+  .card-front{
+    background-color: var(--primary-color);
+  }
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: url("../css/background5.jpg");  
+  }
+  
+
+footer {
+  background-color:white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 1rem;
   text-align: center;
-}
+  }
 
-.profile_text {
-  flex: 1 1 100px;
-}
+  .footer-logo:hover {
+    transform: scale(1.3);
+    transition: all 0.3s ease-in-out;
+  }
 
-.page-header {
-  display: flex;
-  width: 100%;
-  padding: 20px;
-}
-
-.navigation-list {
-  list-style-type: none;
-}
-
-.navigation-list li {
-  display: var(--display-inline-block);
-  margin-left: 15px;
-}
-
-.page-header_item  {
-  display: block;
-  height: auto;
-  max-width: 100%;
-  flex: 0 1 200px;
-}
-
-.page-header_item:last-child {
-  flex-grow: 1;
-  text-align: right;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.grid_item {
-  background-color: var(--grid_item-background-color);
-  padding: 20px;
-  margin: 20px;
-  border: 10px;
-}
-
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
-  .grid_item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 600px) {
   .grid {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
   }
-  .grid_item:last-child {
+  .button-Skills img{
+    height: 80px;
+    margin:0 2%;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+    
+  }
+  .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
   h1 {
     font-size: 22px;
   }
+
+  .profile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .page-header {
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+  }
+  .page-header__logo, .profile__portrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 5px;
+  }
+  .page-header .page-header__item .navigation-list {
+    padding: 0;
+    margin: 5px;
+    text-align: center;
+  }
+  }
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #007777;
+  color: white;
+  padding: 5px;
+  transform: rotateY(180deg);
+}
+
+/*
+flip card
+*/
+.card-flip > div {
+backface-visibility: hidden;
+transition: transform 300ms;
+transition-timing-function: linear;
+width: 100%;
+height: 100%;
+margin: 0;
+display: flex;
+}
+
+.card-front {
+transform: rotateY(0deg);
+}
+
+.card-back {
+transform: rotateY(180deg);
+position: absolute;
+top: 0;
+}
+
+.card-flip:hover .card-front {
+transform: rotateY(-180deg);
+}
+
+.card-flip:hover .card-back {
+transform: rotateY(0deg);
+}
+
 
 .about {
   max-width: 700px;
@@ -183,75 +349,156 @@ a {/* element selector */
   list-style-type: none;
 }
 
-.contact {
-  max-width: 700px;
-  margin: 0 auto;
+.cv-buttons {
   text-align: center;
 }
 
+/* house animation with sun and cloud */
 .sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: color-change;
+          animation-name: color-change;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
 }
 
 @keyframes color-change {
   0% {
-    fill: var(--keyframes-color-change0);
+    fill: #edc655;
   }
   50% {
-    fill: var(--keyframes-color-change50);
+    fill: #fcffad;
   }
   100% {
-    fill: var(--keyframes-color-change100);
+    fill: #f76414;
+  }
+}
+
+@-webkit-keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
   }
 }
 
 @keyframes cloud-move {
   from {
-    transform: translate(0, 50px);
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
   to {
-    transform: translate(200px, 50px);
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
   }
 }
 
 .cloud-front {
-  animation: 35s cloud-move infinite alternate linear;
+  -webkit-animation: 35s cloud-move infinite alternate linear;
+          animation: 35s cloud-move infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(200px, 96px);
+            transform: translate(200px, 96px);
+  }
 }
 
 @keyframes cloud-move-reverse {
   from {
-    transform: translate(446px, 48px);
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
   }
   to {
-    transform: translate(200px, 96px);
+    -webkit-transform: translate(200px, 96px);
+            transform: translate(200px, 96px);
   }
 }
 
 .cloud-back {
-  animation: 39s cloud-move-reverse infinite alternate linear;
+  -webkit-animation: 39s cloud-move-reverse infinite alternate linear;
+          animation: 39s cloud-move-reverse infinite alternate linear;
 }
 
-body {
-  background-image: url("../css/background12.jpg"); 
-  background-color: lightgreen
+/* image skills */
+.rotate {
+  animation: rotation 8s infinite linear;
 }
 
-footer { 
-  height: 5%; 
-  text-align: 
-  center; margin-top: 500px; 
-  background-color: rgb(112, 112, 112); 
-  color: gold; 
-  padding: 10px; 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* skills */
+.button-Skills {
+      -ms-flex-direction: row;
+          flex-direction: row;
+          justify-content: space-between;
+  margin: 5% 0 -50px 0;
+  text-align: center;
+}
+
+/* skills */
+.button-Skills img{
+  height: 60px;
+  margin:0 2%;
+}
+
+.end-buttons{
+  /* display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; */
+  text-align: center;
+  margin: 100px 0 30px;
 }
 
 
-
-
+.end-buttons{
+  /* display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; */
+  text-align: center;
+  margin: 100px 0 30px;
+}
+.end-buttons a{
+  margin: 0 50px;
+}
+.arrow{
+  width: 15px;
+  float: right;
+}
 
 
 
