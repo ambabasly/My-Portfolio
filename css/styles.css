@@ -474,31 +474,7 @@ transform: rotateY(0deg);
   margin:0 2%;
 }
 
-.end-buttons{
-  /* display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr; */
-  text-align: center;
-  margin: 100px 0 30px;
-}
 
-
-.end-buttons{
-  /* display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr; */
-  text-align: center;
-  margin: 100px 0 30px;
-}
-.end-buttons a{
-  margin: 0 50px;
-}
-.arrow{
-  width: 15px;
-  float: right;
-}
 
 
 
