@@ -6,7 +6,7 @@
 */
 
 body {
-  background-color: #fbf7f5;
+  background-color: black;
   font-family: 'Libre Baskerville', serif;
   font-weight: 400;
   font-size: 16px;
@@ -22,7 +22,8 @@ body {
 main {
   padding-bottom: 2.5rem;
   margin-top: 5rem;
-  padding: 30px; 
+  padding: 30px;
+  color: white; 
 
 }
 
@@ -63,8 +64,6 @@ a:active {
   width: 100%;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #ffffff;
-  color: white;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -73,11 +72,11 @@ a:active {
 .nav-link {
     cursor: pointer;
     position: relative;
-    color: blue;
+    color: white;
 }
 
 .nav-link:hover {
-  color: blue;
+  color: white;
 }
 
 a.navigation-list__item::before, a.navigation-list__item::after
@@ -195,11 +194,8 @@ button:focus,
           box-sizing: border-box;
 }
 
-
-
-
 .page-footer {
-background-color: white;
+background-color: darkgray;
 position: absolute;
 bottom: 0;
 right: 0;
@@ -390,6 +386,14 @@ top: 0;
       transform: rotateY(0deg);
 }
 
+.card-text {
+  color: black;
+}
+
+.tech-widget {
+  color: black;
+  font-size: 12px;
+}
 
 .about {
 max-width: 700px;
@@ -544,15 +548,15 @@ height: 60px;
 margin:0 2%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .body {
+    margin: 0 0px 0 80px;
+  }
+  .main{
+    font-size: 20px;
+  }
+  .page-header__logo, .profile__portrait {
+    font: 12px;
+  }
+}
