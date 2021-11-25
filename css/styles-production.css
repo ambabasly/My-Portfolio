@@ -195,17 +195,16 @@ button:focus,
           box-sizing: border-box;
 }
 
-body {
-  background-image: url("../css/background5.jpg");  
-}
 
 
-footer {
-background-color:white;
+
+.page-footer {
+background-color: white;
 position: absolute;
 bottom: 0;
 right: 0;
 left: 0;
+justify-content: space-between;
 padding: 1rem;
 text-align: center;
 }
@@ -544,6 +543,10 @@ text-align: center;
 height: 60px;
 margin:0 2%;
 }
+
+
+
+
 
 
 
