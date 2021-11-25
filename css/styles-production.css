@@ -388,11 +388,17 @@ top: 0;
 
 .card-text {
   color: black;
+  text-align: center;
+  font-size: 12px;
 }
 
 .tech-widget {
   color: black;
   font-size: 12px;
+}
+
+.h5 {
+  font-size: 11px;
 }
 
 .about {
