@@ -87,6 +87,7 @@ a.navigation-list__item::after {
   content: "";
   opacity: 0;
   transition: all 0.3s;
+  transform: translateY(0px);
 }
 
 a.navigation-list__item::before {
@@ -97,12 +98,6 @@ a.navigation-list__item::before {
 a.navigation-list__item::after {
   bottom: 0px;
   transform: translateY(-15px);
-}
-
-a.navigation-list__item:hover::before,
-a.navigation-list__item:hover::after {
-  opacity: 1;
-  transform: translateY(0px);
 }
 
 .button-group {
